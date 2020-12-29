@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rikkai University</title>
+    <meta name="description" content="Homepage of Rikkai University" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        #registration-form {
+            padding: 1rem;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group label {
+            margin-right: 2em;
+            font-weight: 800;
+        }
+
+        .input-group input {
+            margin: 0 0 4px 0;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 2px;
+        }
+
+        .input-group select {
+            margin: 0 0 4px 0;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 2px;
+        }
+
+        #program-input-label {
+            margin-right: 2em;
+            font-weight: 800;
+        }
+
+        #register-btn {
+            padding: 0.6rem;
+            font-size: 0.7em;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-container sticky">
+        <ul class="nav">
+            <li class="nav__item nav__item--home">
+                <div class="home-link-container">
+                    <a href="/" aria-label="Home">
+                        <div class="home-link">
+                            <div class="home-link__logo-container">
+                                <img class="logo" alt="logo" src="logo/logo.png" />
+                            </div>
+                            <div class="home-link__my-name">Rikkai University</div>
+                        </div>
+                    </a>
+                    <div class="empty"></div>
+                </div>
+            </li>
+            <li class="nav__item">
+                <a href="/important-dates.html" aria-label="Important Dates">Important Dates</a>
+            </li>
+            <li class="nav__item">
+                <a href="/program-list.html" aria-label="Program List">Program List</a>
+            </li>
+            <li class="nav__item">
+                <a href="/registration.html" aria-label="Registration">Registration</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h1>Register</h1>
+        <form id="registration-form">
+            <div class="input-group">
+                <label for="name-input">Name</label>
+                <input id="name-input" type="text" placeholder="Name" required>
+            </div>
+            <div class="input-group">
+                <label for="email-input">Email</label>
+                <input id="email-input" type="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <label for="phone-input">Phone</label>
+                <input id="phone-input" placeholder="Phone with country code" type="text" required>
+            </div>
+            <div class="input-group">
+                <label for="qualification-input">Qualification</label>
+                <input id="qualification-input" placeholder="Qualification" type="text" required>
+            </div>
+            <div class="input-group">
+                <lable id="program-input-label" for="program-input">Program</lable>
+                <select id="program-input">
+                    <option value="U435">BBA</option>
+                    <option value="R785">BCA</option>
+                    <option value="H535">B.Sc. Nursing</option>
+                    <option value="X609">MCA</option>
+                    <option value="H367">B.Com</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <button id="register-btn" type="submit">Register</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__content"></div>
+    </footer>
+    <script src="/js/register.js"></script>
+</body>
+
+</html>
